@@ -1,0 +1,9 @@
+.images {
+    height: 200px;
+    width: 200;
+}
+
+.verticalalign {
+   display: flex;
+align-items: center;
+}

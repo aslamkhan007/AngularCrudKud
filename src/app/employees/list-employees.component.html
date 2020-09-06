@@ -1,0 +1,111 @@
+<div class = "panel panel-primary"  *ngFor = "let employee of employees" >
+
+    <div class= "panel-heading">
+
+        <h1 class="panel-title">{{employee.name | uppercase}}</h1>        
+        
+    </div>
+
+    <div class="panel-body ">
+
+    <div class = "col-xs-10 ">
+    
+      <div class = "row verticalalign">
+
+          <div class="col-xs-4 ">
+           
+            <!-- <img [src] ="assets/images/{{employee.image}}"  class="images"> -->
+            <img [src] = "employee.photoPath"  class="images"/>
+
+          </div>
+
+          <div class="col-xs-8">
+
+                <div class="row">
+                    
+                    <div class="col-xs-6">
+                        id
+                    </div>
+                    <div class="col-xs-6">
+                       : {{employee.id}}
+                    </div>
+
+                    <div class="col-xs-6">
+                       name
+                    </div>
+
+                    <div class="col-xs-6">
+                        : {{employee.name}}
+                     </div>
+
+                     <div class="col-xs-6">
+                    gender
+                     </div>
+ 
+                     <div class="col-xs-6">
+                         : {{employee.gender}}
+                      </div>
+
+
+
+                                          
+                    <div class="col-xs-6">
+                        email
+                    </div>
+                    <div class="col-xs-6">
+                       : {{employee.email}}
+                    </div>
+
+                    <div class="col-xs-6">
+                       phoneno
+                    </div>
+
+                    <div class="col-xs-6">
+                        : {{employee.phoneNumber}}
+                     </div>
+
+                     <div class="col-xs-6">
+                    dateofbirth
+                     </div>
+ 
+                     <div class="col-xs-6">
+                         : {{employee.dateOfBirth | date }}
+                      </div>
+
+
+
+                      <div class="col-xs-6">
+                        isActive
+                    </div>
+                    <div class="col-xs-6">
+                       : {{employee.isActive}}
+                    </div>
+
+                    <div class="col-xs-6">
+                        department
+                    </div>
+
+                    <div class="col-xs-6">
+                        : {{employee.department}}
+                     </div>
+
+                     <div class="col-xs-6">
+                        contactPreference
+                     </div>
+ 
+                     <div class="col-xs-6">
+                         : {{employee.contactPreference}}
+                      </div>
+
+
+                </div>
+
+          </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+</div>
